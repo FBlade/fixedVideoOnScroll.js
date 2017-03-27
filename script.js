@@ -1,4 +1,3 @@
-
 $( document ).ready(function() {
     var v = "#video-holder";
     var showHeight = 200;
@@ -7,12 +6,11 @@ $( document ).ready(function() {
     var initHeight = $(v).height();
     $(window).scroll( function() {
         if ($(this).scrollTop() > showHeight) {
-            $(v).addClass('sv');
-            $(v).addClass('vadj');
-            $(v).css('margin-bottom','-'+ parseInt((initHeight/2)-m) + 'px');
+            $(v).addClass('sv vadj');
+            $(v).css('margin-bottom', -Math.abs((initHeight/2)-m) + 'px');
         };
         if ($(this).scrollTop() < (showHeight/2)) {
-            $(v).removeClass('sv',  'vadj');
+            $(v).removeClass('sv vadj');
         };
     });
 });
