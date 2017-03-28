@@ -1,12 +1,13 @@
+//.fluid-width-video-wrapper
 /*
 https://github.com/FBlade/fixedVideoOnScroll.js
 https://github.com/FBlade/fixedVideoOnScroll.js/blob/master/LICENSE
-Apache License 2.0   
+Apache License 2.0
 */
 
 $( document ).ready(function() {
-    var v = "#video-holder";
-    var showHeight = 200;
+    var v = ".fluid-width-video-wrapper";
+    var showHeight = 600;
     var m = 20;
     var initWidth = $(v).width();
     var initHeight = $(v).height();
